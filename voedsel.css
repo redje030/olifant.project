@@ -5,13 +5,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+body {
+    background: #BFB2AA;
+}
+
+
 .header {
-    min-height: 100vh;
+    min-height: 100px; 
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/download.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
+    background-color: #BFB2AA; 
+    color: black; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +23,7 @@
     padding: 20px;
     position: relative;
 }
+
 
 nav {
     display: flex;
@@ -57,7 +62,8 @@ nav img {
     color: #6c773d;
 }
 
-.fa-bars, .fa-times {
+.fa-bars,
+.fa-times {
     display: none;
 }
 
@@ -80,8 +86,8 @@ nav img {
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color:   #BFB2AA;;
+    border: 1px solid #BFB2AA;
     padding: 12px 34px;
     font-size: 16px;
     background: transparent;
@@ -93,11 +99,65 @@ nav img {
     border-color: #6c773d;
 }
 
-@media (max-width: 2000px) {
+.content {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.container.reverse {
+    flex-direction: row-reverse; 
+}
+
+.text-section {
+    background: #BFB2AA;
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text-section,
+    .image-section {
+        max-width: 100%; 
+        margin: 10px 0; 
+    }
+
     nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 0 20px;
     }
 
     .nav-links {
@@ -126,7 +186,7 @@ nav img {
 
     .fa-bars {
         display: block;
-        color: white;
+        color: #BFB2AA;
         font-size: 28px;
         cursor: pointer;
     }
@@ -135,26 +195,5 @@ nav img {
         display: block;
         color: white;
         font-size: 22px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
-}
-
-.logo {
-    width: 150px;
-    mix-blend-mode: screen; 
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-section, .text-section {
-        max-width: 100%;
-        margin: 10px 0;
     }
 }

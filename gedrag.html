@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedrag van de Olifant</title>
+    <link rel="stylesheet" href="gedrag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="image/download (1).png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gedrag.html">GEDRAG</a></li>
+                    <li><a href="voedsel.html">VOEDSEL</a></li>
+                    <li><a href="habitat.html">HABITAT</a></li>
+                    <li><a href="bedereiging.html">BEDREIGING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Gedrag van de Olifant</h1>
+        </div>
+    </section>
+
+    <section class="content" style="background-color: #BFB2AA; padding: 40px 20px;">
+        <div class="container">
+            <!-- Eerste tekst en afbeelding -->
+            <div class="text-section">
+                <h2>Sociale Structuren</h2>
+                <p>Olifanten zijn uiterst sociale dieren die in hechte familiegroepen leven. Deze groepen bestaan meestal uit vrouwtjes en hun jongen, geleid door de oudste en meest ervaren vrouwtjesolifant, ook wel de matriarch genoemd. De matriarch speelt een cruciale rol in de groep, omdat zij de kennis en ervaring heeft om belangrijke beslissingen te nemen, zoals het vinden van waterbronnen en voedsel. De sterke familiebanden zorgen ervoor dat olifanten elkaar beschermen en ondersteunen, vooral bij het opvoeden van de jongen. Hun sociale interacties omvatten communiceren met verschillende geluiden, zoals trompetteren en grommen, en lichaamstaal. Olifanten tonen ook empathie en rouwen om overleden groepsleden, wat getuigt van hun emotionele diepgang.</p>
+            </div>
+            <div class="image-section">
+                <imgs src="" alt="Olifanten in een groep" style="width:100%;max-width:600px;">
+            </div>
+        </div>
+
+        <div class="container" style="flex-direction: row-reverse;">
+            <!-- Tweede tekst en afbeelding -->
+            <div class="image-section">
+                <img src="image/gedrag2.jpg" alt="Olifanten communiceren" style="width:100%;max-width:600px;">
+            </div>
+            <div class="text-section">
+                <h2>Communicatie en Intelligentie</h2>
+                <p>Olifanten zijn bekend om hun indrukwekkende communicatieve vaardigheden en hoge intelligentie. Ze gebruiken een scala aan geluiden om met elkaar te communiceren, waaronder laagfrequente geluiden die over lange afstanden kunnen worden gehoord. Naast vocale communicatie maken olifanten ook gebruik van geur en visuele signalen om informatie uit te wisselen. Ze hebben een uitstekend geheugen en kunnen zich belangrijke plaatsen en gebeurtenissen herinneren, wat essentieel is voor hun overleving. Deze intelligentie stelt hen in staat om complexe problemen op te lossen en zich aan te passen aan veranderende omgevingen. Olifanten zijn ook speels, wat hun sociale interacties versterkt en hen helpt om sterke banden binnen de groep te behouden.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

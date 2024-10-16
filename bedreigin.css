@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #BFB2AA; 
+}
+
+
+.header {
+    min-height: 100px; 
+    width: 100%;
+    background-color: #BFB2AA; 
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    position: absolute;
+    right: -200px; 
+    top: 0;
+    height: 100vh;
+    background-color: rgba(4, 30, 8, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    width: 200px;
+}
+
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #6c773d;
+}
+
+.fa-bars{
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-times {
+    display: block;
+    color: white;
+    font-size: 22px;
+}
+
+.text-box {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.text-box h1 {
+    font-size: 48px;
+}
+
+.text-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color:   #BFB2AA;;
+    border: 1px solid #BFB2AA;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    transition: background 0.5s, color 0.5s;
+}
+
+.hero-btn:hover {
+    background: #6c773d;
+    border-color: #6c773d;
+}
+
+
+.content {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.container.reverse {
+    flex-direction: row-reverse; 
+}
+
+.text-section {
+    background: #BFB2AA;
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+
+@media (min-width: 769px) {
+    .nav-links {
+        position: relative;
+        right: 0;
+        top: 0;
+        height: auto;
+        background: none;
+        flex-direction: row;
+    }
+
+    .text-section,
+    .image-section {
+        max-width: 100%; 
+        margin: 10px 0; 
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: -200px;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(4, 30, 8, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        width: 200px;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .fa-bars {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        display: block;
+        color: white;
+        font-size: 22px;
+    }
+}
+
+.text-section{
+    margin: 0;
+    padding: 2em;
+    width: 600px;
+    background: #6c773d;
+    text-align: center;
+    border-radius: 10px;
+}
+.text-section::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: -10%;
+    background: #6c773d;
+    top: 50%;
+    left: 80%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+.logo{
+    mix-blend-mode: screen;
+    width: 150px;
+}

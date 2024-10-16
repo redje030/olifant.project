@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedrag van de Olifant</title>
+    <link rel="stylesheet" href="gedrag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="image/download (1).png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gedrag.html">GEDRAG</a></li>
+                    <li><a href="voedsel.html">VOEDSEL</a></li>
+                    <li><a href="habitat.html">HABITAT</a></li>
+                    <li><a href="bedereiging.html">BEDREIGING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Voedsel van de Olifant</h1>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="text-section"> 
+                <h2>Herbivoor Dieet van de Olifant</h2>
+                <p>Olifanten zijn herbivoren en hun dieet bestaat voornamelijk uit plantaardig voedsel.
+                     Ze eten een breed scala aan items, zoals gras, bladeren, takken en schors. 
+                     De voedselkeuze varieert afhankelijk van het seizoen en de beschikbaarheid.
+                      In droge periodes voeden ze zich vooral met gras, terwijl ze tijdens het regenseizoen de voorkeur geven aan bladeren en vruchten. 
+                      Hun grote lichaam vereist aanzienlijke hoeveelheden voedsel; een volwassen olifant kan tot 150 kg per dag consumeren. 
+                      Deze eetgewoonten zijn cruciaal voor het behoud van hun ecosysteem, aangezien ze zaden verspreiden en helpen bij de groei van vegetatie.
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="image/voedsel.jpg"Olifanten in een groep style="width:100%;max-width:600px;">
+            </div>
+        </div>
+
+        <div class="container reverse">
+            <div class="image-section">
+                <img src="image/water.jpg" alt="Olifanten communiceren" style="width:100%;max-width:600px;">
+            </div>
+            <div class="text-section">
+                <h2>Waterinname en Spijsvertering</h2>
+                <p>Naast voedsel is water essentieel voor olifanten. Ze drinken dagelijks tussen de 50 en 200 liter water, afhankelijk van het klimaat en de omgeving. Hun spijsverteringssysteem is echter niet bijzonder efficiënt, wat betekent dat ze grote hoeveelheden voedsel moeten innemen om voldoende voedingsstoffen te absorberen. Dit maakt hun voedselzoekgedrag van vitaal belang voor hun overleven. Door het grazen en rondzwerven helpen olifanten ook bij het onderhouden van hun leefgebied. Het beschermen van hun voedselbronnen is cruciaal voor hun voortbestaan en de biodiversiteit in hun omgeving.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" style="text-align: center; margin: 40px 0;">
+        <h2>Bekijk een video over Olifanten</h2>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/mOWBwFqltYA?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

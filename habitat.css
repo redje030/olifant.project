@@ -1,17 +1,15 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .header {
-    min-height: 100vh;
+    min-height: 100px; /* Zorg ervoor dat de header zichtbaar is */
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/download.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
+    background-color: #BFB2AA; /* Gebruik dezelfde kleur als de achtergrond van de content */
+    color: black; /* Kleur voor de tekst in de header */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +17,7 @@
     padding: 20px;
     position: relative;
 }
+
 
 nav {
     display: flex;
@@ -93,13 +92,16 @@ nav img {
     border-color: #6c773d;
 }
 
+
 @media (max-width: 2000px) {
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+}
 
+    
     .nav-links {
         position: absolute;
         right: -200px;
@@ -135,26 +137,29 @@ nav img {
         display: block;
         color: white;
         font-size: 22px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
     }
-}
 
-.logo {
-    width: 150px;
-    mix-blend-mode: screen; 
-}
-
-@media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 40px; 
     }
-
-    .image-section, .text-section {
-        max-width: 100%;
-        margin: 10px 0;
+    
+    .text-section {
+        flex: 1;
+        max-width: 45%;
+        margin: 10px; 
     }
-}
+    
+    .image-section {
+        flex: 1;
+        max-width: 45%;
+        margin: 10px; 
+    }
+    
+    
+    .container[style*="flex-direction: row-reverse"] {
+        flex-direction: row-reverse;
+    }
+    

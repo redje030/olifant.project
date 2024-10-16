@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacteer ons</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gedrag.html">GEDRAG</a></li>
+                    <li><a href="voedsel.html">VOEDSEL</a></li>
+                    <li><a href="habitat.html">HABITAT</a></li>
+                    <li><a href="bedereiging.html">BEDREIGING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contacteer ons</h1>
+        </div>
+    </section>
+
+    <div class="container" style="padding: 40px 20px;">
+        <p>We reageren graag op je vraag.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Stuur je verzoek</h3>
+                <form>
+                    <div class="input-group">
+                        <label>Naam</label>
+                        <input type="text" placeholder="Jouw naam">
+                    </div>
+                    <div class="input-group">
+                        <label>Telefoon</label>
+                        <input type="text" placeholder="+31640342525">
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="text" placeholder="boef030@hotmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Onderwerp</label>
+                        <input type="text" placeholder="Gedrag">
+                    </div>
+                    <label>Bericht</label>
+                    <textarea rows="5" placeholder="Jouw Bericht"></textarea>
+                    <button type="submit">Verstuur</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Contacteer ons</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>Boef030@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Nummer:</td>
+                        <td>063445325</td>
+                    </tr>
+                    <tr>
+                        <td>Adres:</td>
+                        <td>Utrecht, Harmonielaan 1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
